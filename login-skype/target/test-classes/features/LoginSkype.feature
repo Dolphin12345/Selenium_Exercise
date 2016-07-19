@@ -26,7 +26,7 @@ Feature: Login Skype Page
   @tag4
   Scenario: Login with correct user name and password
     Given Open Login skype page
-     When I am input username is "correct"
-      And I am input password is "correct"
+     When I am input username is "tham.dolphin"
+      And I am input password is "dungcoh0i"
       And user click Signin button
      Then I verify page title is "Skype My Account"

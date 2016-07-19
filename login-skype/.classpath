@@ -121,7 +121,7 @@
 	<classpathentry kind="var" path="M2_REPO/net/serenity-bdd/serenity-cucumber/1.1.9/serenity-cucumber-1.1.9.jar"/>
 	<classpathentry kind="var" path="M2_REPO/net/serenity-bdd/serenity-screenplay/1.1.36/serenity-screenplay-1.1.36.jar"/>
 	<classpathentry kind="var" path="M2_REPO/net/serenity-bdd/serenity-screenplay-webdriver/1.1.36/serenity-screenplay-webdriver-1.1.36.jar"/>
-	<classpathentry kind="var" path="M2_REPO/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4.jar" sourcepath="M2_REPO/info/cukes/cucumber-java/1.2.4/cucumber-java-1.2.4-sources.jar"/>
 	<classpathentry kind="var" path="M2_REPO/info/cukes/cucumber-junit/1.2.4/cucumber-junit-1.2.4.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-simple/1.7.7/slf4j-simple-1.7.7.jar"/>
 	<classpathentry kind="var" path="M2_REPO/org/assertj/assertj-core/1.7.0/assertj-core-1.7.0.jar"/>
