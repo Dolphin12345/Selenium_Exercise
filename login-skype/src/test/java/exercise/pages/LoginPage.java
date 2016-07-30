@@ -26,6 +26,7 @@ public class LoginPage extends PageObject {
 		
 	}
 	
+//	@FindBy(css="div.messageBox.message_error > span", timeoutInSeconds="10")
 	@FindBy(css="div.messageBox.message_error > span")
 	public WebElementFacade error_pass;
 	
@@ -34,7 +35,11 @@ public class LoginPage extends PageObject {
 //		return error_pass.waitUntilVisible().getText();
 //		error_pass.setImplicitTimeout(10,SECONDS);
 //		return error_pass.getText();
+		
 		return withTimeoutOf(10, TimeUnit.SECONDS).waitFor(error_pass).getText();
+		
+//		withTimeoutOf(5, SECONDS).waitForPresenceOf(error_pass);
+//		return error_pass.getText();
 	}
 	
 	@FindBy(id="password")

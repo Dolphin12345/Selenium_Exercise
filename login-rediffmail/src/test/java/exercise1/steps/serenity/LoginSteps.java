@@ -1,15 +1,14 @@
 package exercise1.steps.serenity;
 
+import org.junit.Assert;
+
 import exercise1.pages.LoginPage;
-import junit.framework.Assert;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 
 public class LoginSteps extends ScenarioSteps{
 	
-	@Steps
-		LoginPage loginPage;
+	LoginPage loginPage;
 
 	@Step
 	public void openPage() {
@@ -24,7 +23,7 @@ public class LoginSteps extends ScenarioSteps{
 	}
 
 	@Step
-	public void verifyBlankError(String blankError) {
+	public void verifyBlankError(String blankError) throws Exception {
 		String actualMsg= loginPage.getBlankErrorMsg();
 		Assert.assertEquals(actualMsg, blankError);
 		

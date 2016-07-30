@@ -1,5 +1,8 @@
 package exercise1.pages;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.WebDriver;
+
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
@@ -15,10 +18,24 @@ public class LoginPage extends PageObject{
 		
 	}
 	
-	public String getBlankErrorMsg() {
-		// TODO Auto-generated method stub
-		return null;
+//	WebDriver verifyMsg;
+//	public String getBlankErrorMsg() throws Exception {
+//		Alert alert = verifyMsg.switchTo().alert();
+//		String contentOfTerms= verifyMsg.getText();  
+//		System.out.println(contentOfTerms);
+//		return contentOfTerms;
+//		
+//	}
+	
+	WebDriver verifyMsg;
+
+	public String getBlankErrorMsg() throws Exception {
+		Alert alert = verifyMsg.switchTo().alert();
+		String alert1 = alert.getText();
+		return alert1;
+
 	}
+	
 
 	@FindBy(id="login1")
 	public WebElementFacade name;

@@ -24,6 +24,14 @@ public class DefinitionLogin {
 	public void she_verifies_error_message_is(String blankError) throws Throwable {
 	    loginStep.verifyBlankError(blankError);
 	}
+	
+//	@Then("^The confirmation box should have been displayed \"([^\"]*)\"$")
+//	public void she_verifies_error_message_is(String blankError) throws Throwable {
+//	    loginStep.verifyBlankError(blankError);
+//	    page.driver.wait_until(page.driver.browser.switch_to.alert.accept)
+//	    page.driver.browser.switch_to.alert.accept
+//	}
+//	
 
 	@When("^She inputs \"([^\"]*)\" into the Username$")
 	public void she_inputs_into_the_Username(String userName) throws Throwable {
